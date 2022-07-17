@@ -11,7 +11,7 @@ const requests=axios.create({
 requests.interceptors.request.use((config) => {
 nProgress.start(); //进度条开始
  //config配置对象 ---包含请求体，url，data等等
-
+config.headers.Authorization=sessionStorage.getItem('token')
     return config
 })
 //响应拦截器

@@ -34,8 +34,8 @@ export default {
   setup() {
     const router = useRouter();
     const loginForm = reactive({
-      username: "",
-      password: "",
+      username: "admin",
+      password: "123456",
     });
     const loginFormRules = reactive({
       username: [
